@@ -258,7 +258,8 @@ const AnalyticsDashboard = () => {
                       <div className="bg-blue-600 h-2 rounded-full" style={{width: '78%'}}></div>
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-purple-600 mb-2">-8%</div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-600 mb-2">-8%</div>
                     <p className="text-sm text-slate-600">Response Time</p>
                     <div className="w-full bg-slate-200 rounded-full h-2 mt-2">
                       <div className="bg-purple-600 h-2 rounded-full" style={{width: '92%'}}></div>
