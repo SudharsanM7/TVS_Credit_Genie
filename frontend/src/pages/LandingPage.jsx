@@ -64,9 +64,14 @@ const LandingPage = () => {
                 <p className="text-sm text-slate-600">AI Financial Companion</p>
               </div>
             </div>
-            <Badge variant="secondary" className="bg-blue-100 text-blue-700">
-              Prototype Demo
-            </Badge>
+            <div className="flex items-center space-x-3">
+              <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                Prototype Demo
+              </Badge>
+              <div className="text-xs text-slate-600">
+                Made by <span className="font-semibold text-blue-600">Sudharsan M</span>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -109,9 +114,9 @@ const LandingPage = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 text-lg"
-            onClick={() => navigate('/chatbot')}
+            onClick={() => navigate('/demo')}
           >
-            Try the Demo
+            Interactive Demo
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
@@ -153,9 +158,9 @@ const LandingPage = () => {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">Interactive Demo</h2>
+            <h2 className="text-3xl font-bold text-slate-800 mb-4">Explore the Demo</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Explore different aspects of the TVS Credit Genie platform
+              Experience different aspects of the TVS Credit Genie platform
             </p>
           </div>
 
@@ -187,6 +192,18 @@ const LandingPage = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white hover:bg-blue-50 border-blue-200 text-blue-700 hover:text-blue-800 px-8 py-3"
+              onClick={() => navigate('/demo')}
+            >
+              View All Demos
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -203,7 +220,7 @@ const LandingPage = () => {
             Autonomous, Intelligent, and Trustworthy Financial Companion
           </p>
           <p className="text-sm text-slate-500">
-            This is a prototype demonstration. All data shown is mock data for demo purposes.
+            This is a prototype demonstration • Made with ❤️ by <span className="text-blue-400 font-semibold">Sudharsan M</span>
           </p>
         </div>
       </footer>

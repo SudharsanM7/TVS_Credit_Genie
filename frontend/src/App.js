@@ -5,6 +5,7 @@ import "./App.css";
 
 // Pages
 import LandingPage from "./pages/LandingPage";
+import InteractiveDemo from "./pages/InteractiveDemo";
 import ChatbotDemo from "./pages/ChatbotDemo";
 import CustomerDashboard from "./pages/CustomerDashboard";
 import AgentDashboard from "./pages/AgentDashboard";
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/demo" element={<InteractiveDemo />} />
           <Route path="/chatbot" element={<ChatbotDemo />} />
           <Route path="/customer" element={<CustomerDashboard />} />
           <Route path="/agent" element={<AgentDashboard />} />
